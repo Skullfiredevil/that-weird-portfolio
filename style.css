@@ -31,6 +31,7 @@ body, html {
   align-items: center;
   margin-bottom: 8px;
   cursor: pointer;
+  position: relative; 
 }
 
 .sidebar {
@@ -122,4 +123,24 @@ body, html {
   color: #ffffff;
   outline: none;
   font-size: 14px;
+}
+
+.server-icon-tooltip {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.server-icon:hover .server-icon-tooltip {
+  opacity: 1;
 }
