@@ -1,36 +1,44 @@
-<div class="container">
-  <div class="sidebar">
-    <ul>
-      <li>Server 1</li>
-      <li>Server 2</li>
-      <li>Server 3</li>
-      <li>Server 4</li>
-    </ul>
-  </div>
-  <div class="chatbox">
-    <div class="chat-header">
-      <h2>Server Name</h2>
-      <button><i class="fas fa-search"></i></button>
-    </div>
-    <div class="chat-messages">
-      <div class="message">
-        <img src="https://i.imgur.com/2r5F5ok.jpg" alt="Avatar">
-        <div class="message-content">
-          <h3>Username</h3>
-          <p>Message content goes here</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord-like UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="server-list">
+            <div class="server-icon">S1</div>
+            <div class="server-icon">S2</div>
+            <div class="server-icon">S3</div>
         </div>
-      </div>
-      <div class="message">
-        <img src="https://i.imgur.com/2r5F5ok.jpg" alt="Avatar">
-        <div class="message-content">
-          <h3>Username</h3>
-          <p>Message content goes here</p>
+        <div class="sidebar">
+            <div class="server-name">
+                <h1>Server Name</h1>
+            </div>
+            <h3 class="channel-header">Text Channels</h3>
+            <div class="channel selected">#general</div>
+            <div class="channel">#random</div>
+            <div class="channel">#portfolio</div>
         </div>
-      </div>
+        <div class="main">
+            <div class="chat-header">
+                <h3>#general</h3>
+            </div>
+            <div class="chat">
+                <div class="message">
+                    <span class="username">User1:</span> Hello, this is a message.
+                </div>
+                <div class="message">
+                    <span class="username">User2:</span> This is another message.
+                </div>
+            </div>
+            <div class="input-bar">
+                <input type="text" class="message-input" placeholder="Type your message...">
+            </div>
+        </div>
     </div>
-    <div class="chat-input">
-      <input type="text" placeholder="Type your message here...">
-      <button><i class="fas fa-paper-plane"></i></button>
-    </div>
-  </div>
-</div>
+    <script src="script.js"></script>
+</body>
+</html>
