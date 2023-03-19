@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord-like UI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,31 +16,25 @@
             <div class="server-icon">S3</div>
         </div>
         <div class="sidebar">
-            <div class="server-name">
-                <h1>Server Name</h1>
-            </div>
-            <h3 class="channel-header">Text Channels</h3>
-            <div class="channel selected">#general</div>
-            <div class="channel">#random</div>
-            <div class="channel">#portfolio</div>
+            <div class="server-name">Server 1</div>
+            <div class="channel-header">TEXT CHANNELS</div>
+            <div class="channel selected"># general</div>
+            <div class="channel"># random</div>
+            <div class="channel"># off-topic</div>
         </div>
         <div class="main">
-            <div class="chat-header">
-                <h3>#general</h3>
-            </div>
+            <div class="chat-header"># general</div>
             <div class="chat">
                 <div class="message">
-                    <span class="username">User1:</span> Hello, this is a message.
-                </div>
-                <div class="message">
-                    <span class="username">User2:</span> This is another message.
+                    <span class="username">User1:</span> Hello, how are you?
                 </div>
             </div>
             <div class="input-bar">
-                <input type="text" class="message-input" placeholder="Type your message...">
+                <input class="message-input" type="text" placeholder="Type your message...">
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
