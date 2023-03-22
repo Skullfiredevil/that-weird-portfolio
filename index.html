@@ -1,93 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord-like UI</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="wrapper">
-    <div class="panel__side">
-      <div class="channel blurple">
-        <div class="channel__content">
-          <i class="fas fa-user"></i>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="panel__side">
+        <div class="channel blurple">
+          <div class="channel__content">
+            <i class="fas fa-user"></i>
+          </div>
+        </div>
+        <div class="channel twitter">
+          <a href="mailto:tiagopintopro@gmail.com"
+            ><div class="channel__content">
+              <i class="fas fa-envelope"></i></div
+          ></a>
         </div>
       </div>
-      <div class="channel twitter">
-        <a href="mailto:tiagopintopro@gmail.com"><div class="channel__content">
-          <i class="fas fa-envelope"></i>
-          </div></a>
-      </div>
-    </div>
-    <div class="panel__main">
-      <div class="panel__main-side">
-        <ul id="navlinks" class="list__links">
+      <div class="panel__main">
+        <div class="panel__main-side">
+          <ul id="navlinks" class="list__links">
+            <a href="#home"
+              ><li class="navlink active">
+                <i class="fas fa-home"></i> &nbsp; Home
+              </li></a
+            >
+            <a href="#about"
+              ><li class="navlink">
+                <i class="far fa-id-card"></i> &nbsp; About
+              </li></a
+            >
+            <a href="#projects"
+              ><li class="navlink">
+                <i class="fas fa-laptop-code"></i> &nbsp; Other Projects
+              </li></a
+            >
+            <a href="#contact"
+              ><li class="navlink">
+                <i class="fas fa-address-book"></i> &nbsp; Contact
+              </li></a
+            >
+          </ul>
+        </div>
+        <div class="panel__main-content">
+          <section id="home">
+            <h3>Portfolio That Uses a UI like Discord as</h3>
+            <p><i>Should've just used lorem ipsum.</i></p>
+            <p>
+              This is a portfolio based on
+              <a target="_blank" href="http://discord.app">Discord's</a> app
+              design, which I was motivated to make after seeing a few other
+              projects designed around other desktop apps. I thought it would be
+              a fun challenge to take something I use regularly and recreate it.
+            </p>
+            <h3>Project Breakdown</h3>
+            <p>
+              This Project was being made since some days ago, when i had the
+              idea of trying to recreate the discord UI and present my portfolio
+              on it
+            </p>
+          </section>
+          <section id="about">
+            <h3>About</h3>
+            <p>
+              Hey, my name is
+              <a
+                target="_blank"
+                href="https://skullfiredevil.github.io/that-weird-portfolio/"
+                >Tiago Pinto</a
+              >
+              and I made this page. The purpose is for it to look like a
+              portfolio, so I'll tell you a little about myself in this section.
+            </p>
+            <p>
+              I'm a passionate web developer from the UK. Currently, I'm
+              exploring new technologies and learning JavaScript, Ruby, Rails,
+              and SQL.
+            </p>
 
-          <a href="#home"><li class="navlink active"><i class="fas fa-home"></i> &nbsp;  Home</li></a>
-          <a href="#about"><li class="navlink"><i class="far fa-id-card"></i>  &nbsp; About</li></a>
-          <a href="#projects"><li class="navlink"><i class="fas fa-laptop-code"></i> &nbsp; Other Projects</li></a>
-        <a href="#contact"><li class="navlink"><i class="fas fa-address-book"></i> &nbsp; Contact</li></a>
-        </ul>
+            <p>
+              I enjoy building web applications that are both visually appealing
+              and functional. When I'm not coding, you can usually find me
+              reading, listening music, or playing video games.
+            </p>
+            <p>
+              Thanks for stopping by! Feel free to reach out if you'd like to
+              connect or collaborate on a project..
+            </p>
+          </section>
 
-      </div>
-      <div class="panel__main-content">
-        <section id="home">
-        <h3>Portfolio That Uses a UI like Discord as</h3>
-        <p><i>Should've just used lorem ipsum.</i></p>
-        <p>This is a portfolio based on <a target="_blank" href="http://discord.app">Discord's</a>  app design, which I was motivated to make after seeing a few other projects designed around other desktop apps. I thought it would be a fun challenge to take something I use regularly and recreate it.</p>
-          <h3>Project Breakdown</h3>
-          <p> This Project was being made since some days ago, when i had the idea of trying to recreate the discord UI and present my portfolio on it</p>
-        </section>
-        <section id="about">
-          <h3>About</h3>
-          <p>Hey, my name is <a target="_blank" href="https://skullfiredevil.github.io/that-weird-portfolio/">Tiago Pinto</a> and I made this page. The purpose is for it to look like a portfolio, so I'll tell you a little about myself in this section.</p>
-        <p>I'm a passionate web developer from the UK. Currently, I'm exploring new technologies and learning JavaScript, Ruby, Rails, and SQL.</p>
+          <section id="projects">
+            <h3>Other Projects</h3>
 
-        <p>I enjoy building web applications that are both visually appealing and functional. When I'm not coding, you can usually find me reading, listening music, or playing video games.</p>
-        <p>Thanks for stopping by! Feel free to reach out if you'd like to connect or collaborate on a project..</p>
+            <div class="card__grid">
+              <a target="_blank" href="/" class="blue card card__projects">
+                <h4>Gamy</h4>
+                <p>
+                  A webapp that is a fake market place that was made with rails
+                  just for fun
+                </p>
+              </a>
 
-        </section>
-
-         <section id="projects">
-          <h3>Other Projects</h3>
-
-           <div class="card__grid">
-
-             <a target="_blank" href="/" class="blue card card__projects">
-             <h4>Gamy</h4>
-               <p>A webapp that is a fake market place that was made with rails just for fun</p>
-           </a>
-
-             <a target="_blank" href="https://giny.herokuapp.com/" class="purple card card__projects">
-             <h4>Giny</h4>
-               <p>A Webapp based on Youtube Shorts and Tiktok but it was supposed to only show clips from twitch using the twitch API</p>
-           </a>
-             <a target="_blank" href="/" class="orange card card__projects">
-             <h4>Soon™</h4>
-               <p>Soon™</p>
-           </a>
-             <!-- <div class="pink card card__projects">
+              <a
+                target="_blank"
+                href="https://giny.herokuapp.com/"
+                class="purple card card__projects"
+              >
+                <h4>Giny</h4>
+                <p>
+                  A Webapp based on Youtube Shorts and Tiktok but it was
+                  supposed to only show clips from twitch using the twitch API
+                </p>
+              </a>
+              <a target="_blank" href="/" class="orange card card__projects">
+                <h4>Soon™</h4>
+                <p>Soon™</p>
+              </a>
+              <!-- <div class="pink card card__projects">
              <h4>Next Project Here</h4>
                <p>Next Project Description here</p>
            </div> -->
+            </div>
+          </section>
 
-           </div>
-
-
-        </section>
-
-         <section id="contact">
-          <h3>Contact</h3>
+          <section id="contact">
+            <h3>Contact</h3>
             <p>If you want to talk to me, that's great!</p>
-            <p>Email me at <a href="mailto:tiagopintopro@gmail.com">tiagopintopro@gmail.com</a> if you want to talk about something, or even just to say hi
-        </section>
-
+            <p>
+              Email me at
+              <a href="mailto:tiagopintopro@gmail.com"
+                >tiagopintopro@gmail.com</a
+              >
+              if you want to talk about something, or even just to say hi
+            </p>
+          </section>
+        </div>
       </div>
     </div>
-  </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
