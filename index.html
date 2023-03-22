@@ -9,41 +9,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
-      <div class="server-list">
-        <div class="server-icon">
-            S1
-            <div class="server-icon-tooltip">Server 1</div> <!-- Add this line for the tooltip -->
+  <div class="wrapper">
+    <div class="panel__side">
+      <div class="channel blurple">
+        <div class="channel__content">
+          <i class="fas fa-user"></i>
         </div>
-        <div class="server-icon">
-            S2
-            <div class="server-icon-tooltip">Server 2</div> <!-- Add this line for the tooltip -->
-        </div>
-        <div class="server-icon">
-            S3
-            <div class="server-icon-tooltip">Server 3</div> <!-- Add this line for the tooltip -->
-        </div>
+      </div>
+      <div class="channel twitter">
+        <a href="mailto:tiagopintopro@gmail.com"><div class="channel__content">
+          <i class="fas fa-envelope"></i>
+          </div></a>
+      </div>
     </div>
-        <div class="sidebar">
-            <div class="server-name">Server 1</div>
-            <div class="channel-header">TEXT CHANNELS</div>
-            <div class="channel selected"># general</div>
-            <div class="channel"># random</div>
-            <div class="channel"># off-topic</div>
-        </div>
-        <div class="main">
-            <div class="chat-header"># general</div>
-            <div class="chat">
-                <div class="message">
-                    <span class="username">User1:</span> Hello, how are you?
-                </div>
-            </div>
-            <div class="input-bar">
-                <input class="message-input" type="text" placeholder="Type your message...">
-            </div>
-        </div>
+    <div class="panel__main">
+      <div class="panel__main-side">
+        <ul id="navlinks" class="list__links">
+
+          <a href="#home"><li class="navlink active"><i class="fas fa-home"></i> &nbsp;  Home</li></a>
+          <a href="#about"><li class="navlink"><i class="far fa-id-card"></i>  &nbsp; About</li></a>
+          <a href="#projects"><li class="navlink"><i class="fas fa-laptop-code"></i> &nbsp; Other Projects</li></a>
+        <a href="#contact"><li class="navlink"><i class="fas fa-address-book"></i> &nbsp; Contact</li></a>
+        </ul>
+
+      </div>
+      <div class="panel__main-content">
+        <section id="home">
+        <h3>Portfolio That Uses a UI like Discord as</h3>
+        <p><i>Should've just used lorem ipsum.</i></p>
+        <p>This is a portfolio based on <a target="_blank" href="http://discord.app">Discord's</a>  app design, which I was motivated to make after seeing a few other projects designed around other desktop apps. I thought it would be a fun challenge to take something I use regularly and recreate it.</p>
+          <h3>Project Breakdown</h3>
+          <p> This Project was being made since some days ago, when i had the idea of trying to recreate the discord UI and present my portfolio on it</p>
+        </section>
+        <section id="about">
+          <h3>About</h3>
+          <p>Hey, my name is <a target="_blank" href="https://skullfiredevil.github.io/that-weird-portfolio/">Tiago Pinto</a> and I made this page. The purpose is for it to look like a portfolio, so I'll tell you a little about myself in this section.</p>
+        <p>I'm a passionate web developer from the UK. Currently, I'm exploring new technologies and learning JavaScript, Ruby, Rails, and SQL.</p>
+
+        <p>I enjoy building web applications that are both visually appealing and functional. When I'm not coding, you can usually find me reading, listening music, or playing video games.</p>
+        <p>Thanks for stopping by! Feel free to reach out if you'd like to connect or collaborate on a project..</p>
+
+        </section>
+
+         <section id="projects">
+          <h3>Other Projects</h3>
+
+           <div class="card__grid">
+
+             <a target="_blank" href="/" class="blue card card__projects">
+             <h4>Gamy</h4>
+               <p>A webapp that is a fake market place that was made with rails just for fun</p>
+           </a>
+
+             <a target="_blank" href="https://giny.herokuapp.com/" class="purple card card__projects">
+             <h4>Giny</h4>
+               <p>A Webapp based on Youtube Shorts and Tiktok but it was supposed to only show clips from twitch using the twitch API</p>
+           </a>
+             <a target="_blank" href="/" class="orange card card__projects">
+             <h4>Soon™</h4>
+               <p>Soon™</p>
+           </a>
+             <!-- <div class="pink card card__projects">
+             <h4>Next Project Here</h4>
+               <p>Next Project Description here</p>
+           </div> -->
+
+           </div>
+
+
+        </section>
+
+         <section id="contact">
+          <h3>Contact</h3>
+            <p>If you want to talk to me, that's great!</p>
+            <p>Email me at <a href="mailto:tiagopintopro@gmail.com">tiagopintopro@gmail.com</a> if you want to talk about something, or even just to say hi
+        </section>
+
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </div>
     <script src="script.js"></script>
 </body>
 </html>
